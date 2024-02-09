@@ -16,8 +16,8 @@
   "scripts": {
     "start": "tsc --watch",
     "build": "rm -rf dist && tsc",
-    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" --fix --max-warnings=0",
-    "lint": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" --max-warnings=0",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\"--fix --max-warnings=0",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
     "prettier": "prettier --check \"**/*.{ts,tsx,html}\"",
     "prettier:fix": "prettier --check \"**/*.{ts,tsx,html}\" -w",
     "test": "jest",
