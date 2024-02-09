@@ -92,4 +92,4 @@ export const groupBy = <T, V = unknown>(
 export const calculateTotalPages = (
   quantityOfResult: number,
   perPage: number,
-) => Math.ceil(quantityOfResult / perPage) || 1;
+): number => Math.ceil(quantityOfResult / perPage) || 1;

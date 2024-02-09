@@ -1,1 +1,1 @@
-This will be the BE of freedom-academy
+This repository contains the definitions among the code needed to consume and produce Freedom Academy apps.

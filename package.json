@@ -5,7 +5,7 @@
   "description": "This repository contains the definitions among the code needed to consume and produce Freedom Academy apps.",
   "author": "Freedom Academy",
   "main": "dist/index.js",
-  "repository": "",
+  "repository": "git@github.com:FreedomAcademySL/FA-common-library.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/eslint": "8.4.3",
     "@types/jest": "28.1.4",
-    "@types/node": "^16.0.0",
+    "@types/node": "^16.18.80",
     "@types/nodemailer": "^6.4.11",
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
