@@ -1,0 +1,60 @@
+{
+  "name": "fa-common-library",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "description": "This repository contains the definitions among the code needed to consume and produce Freedom Academy apps.",
+  "author": "Freedom Academy",
+  "main": "dist/index.js",
+  "repository": "",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "rm -rf dist && tsc",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" --fix --max-warnings=0",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\" --max-warnings=0",
+    "prettier": "prettier --check \"**/*.{ts,tsx,html}\"",
+    "prettier:fix": "prettier --check \"**/*.{ts,tsx,html}\" -w",
+    "test": "jest",
+    "test:develop": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "papaparse": "^5.4.1",
+    "reflect-metadata": "^0.1.13",
+    "timezones.json": "^1.6.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.4.3",
+    "@types/jest": "28.1.4",
+    "@types/node": "^16.0.0",
+    "@types/nodemailer": "^6.4.11",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "eslint-plugin-testing-library": "^5.3.0",
+    "husky": "^8.0.1",
+    "jest": "28.1.2",
+    "prettier": "^2.7.1",
+    "react-scripts": "^5.0.1",
+    "ts-jest": "28.0.5",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "<4.9.0"
+  }
+}
